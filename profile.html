@@ -7,10 +7,152 @@
     <title>Profile</title>
 
     <link rel="stylesheet" href="./styles/profile.css" />
+
+    <style>
+      *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+  }
+  
+  .max-width{
+      max-width: 1300px;
+      padding: 0 80px;
+      margin-top: 5%;
+  }
+
+  body{
+    background: #555;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  h1{
+    font-size: 70px;
+    font-weight: 600;
+  }
+  
+  .para{
+    display: block;
+    width: 100%;
+  }
+  
+  h4,
+  p{
+      font-size: 20px;
+      margin: 5px 0px;
+  }
+  
+  /*columns styling*/
+  .col{
+      display: inline-block;
+      margin-top: 50px;
+  }
+  
+  .left{
+    text-align: left;
+    width: 70%
+  }
+  
+  .profile img{
+      height: 250px;
+      width: 250px;
+      border-radius: 6px;
+  }
+  
+  h2{
+    text-align: justify;
+    padding-bottom: 15px;
+  }
+  
+  .content{
+      text-align: justify;
+  }
+  
+  .right{
+    width: 28%;
+  }
+  
+  .birthday{
+    margin-bottom: 20px;
+  }
+  
+  .right .name{
+      display: inline-block;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 10px;
+  }
+  
+  .name p{
+    margin-top: 10px;
+  }
+  
+  .pic{
+    display: inline-block;
+  }
+  
+  .pic img{
+      height: 80px;
+      width: 80px;
+      border-radius: 6px;
+  }
+  
+  
+  .right p{
+      text-align: right;
+  }
+  
+  /*button styling*/
+  .button{
+      height: 47px;
+      width: 170px;
+      margin-top: 20px;
+  }
+  
+  .button button{
+      height: 100%;
+      width: 100%;
+      border: 2px solid #2600ff;
+      background: #5ac74b;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  
+  .button button:hover{
+      color: #ffffff;
+      background: none;
+  }
+  
+  
+  i{
+      font-size: 25px;
+      margin-left: 35px;
+      justify-content: space-between;
+  }
+  
+  /*footer section styling*/
+  footer{
+      font-family: 'Poppins', sans-serif;
+      margin-top: 25px;
+      background: #000;
+      padding: 15px 25px;
+      color: #fff;
+  }
+  </style>
   </head>
   <body>
     <header>
-      <p>Hack UMBC</p>
+      <p>
+        <a href="index.html" style="text-decoration: none; color: #f00"
+          >Learn-Ect</a
+        >
+      </p>
       <nav>
         <ul>
           <li><a href="feeds.html">Feeds</a></li>
@@ -21,6 +163,115 @@
         </ul>
       </nav>
     </header>
+
+    <div class="max-width body">
+      <div class="col left">
+        <div class="profile">
+          <img src = "images/ankita.png">
+          <div class="content">
+            <h2>Vibhu Sharma</h2>
+            <h4>Creator, Neural Network, AI, and Big-Data!</h4>
+            <p>California, USA</p>
+          </div>
+        </div>
+
+
+        <div class="card-body pt-0 pt-md-4">
+            <div class="row">
+              <div class="col">
+                <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                  <div>
+                    <span class="heading">521</span>
+                    <span class="description">Contributions</span>
+                  </div>
+                  <div>
+                    <span class="heading">10</span>
+                    <span class="description">Connections</span>
+                  </div>
+                  <div>
+                    <span class="heading">89</span>
+                    <span class="description">Responses</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="button"> 
+          <button><a href="updateprofilepage.html" class="button">Edit profile</a></button>
+        </div>
+      </div>
+
+      <div class="col right">
+        <div class="card">
+          <h2>Connections</h2>
+          <div class="birthday">
+            <div class="pic">
+              <img src="images/vinamra.jpg" alt="">
+            </div>
+            <div class="name">
+              <p>Vinam Sam</p>
+              <p>(100+ Hits)</p>
+            </div>
+          </div>
+
+          <div class="birthday">
+            <div class="pic">
+              <img src="images/2.jpg" alt="">
+            </div>
+            <div class="name">
+              <p>Shi Neon</p>
+              <p>(80+ Hits)</p>
+            </div>
+          </div>
+
+          <div class="birthday">
+            <div class="pic">
+              <img src="images/ankita.png" alt="">
+            </div>
+            <div class="name">
+              <p>Lavu Tim</p>
+              <p>(50+ Hits)</p>
+            </div>
+          </div>
+
+          <div class="birthday">
+            <div class="pic">
+              <img src="images/vinamra.jpg" alt="">
+            </div>
+            <div class="name">
+              <p>Tuur Qen</p>
+              <p>(10+ Hits)</p>
+            </div>
+          </div>
+
+          <div class="button">
+            <button><a href="bday.html" class="button">Expand</a></button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <center><a href="#">
+	      <i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="sci">
+						<p class="cpryt"><center>
+						&copy; Copyright 2021 | <a>All Rights Reserved to Team Learn-Ect</a></center>
+					</p>
+				</div>
+			</div>
+
+    </footer>
+
 
     <script>
       let currentUrl = window.location.href;
