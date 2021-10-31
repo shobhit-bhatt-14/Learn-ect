@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn</title>
+
+    <link rel="stylesheet" href="./styles/learn.css" />
+  </head>
+  <body>
+    <header>
+      <p>Hack UMBC</p>
+      <nav>
+        <ul>
+          <li><a href="feeds.html">Feeds</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="find.html">Find</a></li>
+          <li><a href="twin.html">Twin</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="search-container">
+      <form>
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit">🔍</button>
+      </form>
+    </section>
+    <section class="recommendation-container">
+      <div class="card-container">
+        <img src="./images/1.jpg" alt="pic" />
+        <p>Course 1</p>
+      </div>
+      <div class="card-container">
+        <img src="./images/2.jpg" alt="pic" />
+        <p>Course 2</p>
+      </div>
+      <div class="card-container">
+        <img src="./images/1.jpg" alt="pic" />
+        <p>Course 3</p>
+      </div>
+      <div class="card-container">
+        <img src="./images/3.jpg" alt="pic" />
+        <p>Course 4</p>
+      </div>
+      <div class="card-container">
+        <img src="./images/1.jpg" alt="pic" />
+        <p>Course 5</p>
+      </div>
+      <div class="card-container">
+        <img src="./images/4.jpg" alt="pic" />
+        <p>Course 6</p>
+      </div>
+    </section>
+
+    <script>
+      let currentUrl = window.location.href;
+      document.querySelectorAll("nav ul li a").forEach((p) => {
+        if (currentUrl.indexOf(p.getAttribute("href")) !== -1) {
+          p.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

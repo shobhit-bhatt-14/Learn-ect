@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find</title>
+
+    <link rel="stylesheet" href="./styles/find.css" />
+  </head>
+  <body>
+    <header>
+      <p>Hack UMBC</p>
+      <nav>
+        <ul>
+          <li><a href="feeds.html">Feeds</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="find.html">Find</a></li>
+          <li><a href="twin.html">Twin</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="tech-today-container">
+      <p>Facts</p>
+      <div class="tech-container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime
+          delectus non quasi cumque explicabo voluptas consequatur impedit
+          commodi dolore quidem quos hic quia exercitationem, dolor asperiores
+          laborum, corporis sit.
+        </p>
+      </div>
+      <div class="tech-container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime
+          delectus non quasi cumque explicabo voluptas consequatur impedit
+          commodi dolore quidem quos hic quia exercitationem, dolor asperiores
+          laborum, corporis sit.
+        </p>
+      </div>
+      <div class="tech-container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime
+          delectus non quasi.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section class="search-container">
+        <form>
+          <input type="text" placeholder="Find for .." name="find" />
+          <button type="submit">Find</button>
+        </form>
+      </section>
+      <section class="contribution-container">
+        <p>Top Contributors</p>
+        <div class="contributor">
+          <span>
+            <p>Contributor A</p>
+            <h5>14 contributions</h5>
+          </span>
+          <button>Get in Touch</button>
+        </div>
+        <div class="contributor">
+          <span>
+            <p>Contributor B</p>
+            <h5>13 contributions</h5>
+          </span>
+          <button>Get in Touch</button>
+        </div>
+        <div class="contributor">
+          <span>
+            <p>Contributor C</p>
+            <h5>11 contributions</h5>
+          </span>
+          <button>Get in Touch</button>
+        </div>
+        <div class="contributor">
+          <span>
+            <p>Contributor D</p>
+            <h5>9 contributions</h5>
+          </span>
+          <button>Get in Touch</button>
+        </div>
+        <div class="contributor">
+          <span>
+            <p>Contributor E</p>
+            <h5>7 contributions</h5>
+          </span>
+          <button>Get in Touch</button>
+        </div>
+        <div class="contributor">
+          <span>
+            <p>Contributor F</p>
+            <h5>5 contributions</h5>
+          </span>
+          <button>Get in Touch</button>
+        </div>
+        <div class="contributor">
+          <span>
+            <p>Contributor G</p>
+            <h5>4 contributions</h5>
+          </span>
+          <button>Get in Touch</button>
+        </div>
+        <div class="contributor">
+          <span>
+            <p>Contributor H</p>
+            <h5>2 contributions</h5>
+          </span>
+          <button>Get in Touch</button>
+        </div>
+      </section>
+    </main>
+
+    <section class="topics-container">
+      <p>Hot Topics</p>
+      <ul>
+        <li>Topic 1</li>
+        <li>Topic 2</li>
+        <li>Topic 3</li>
+        <li>Topic 4</li>
+        <li>Topic 5</li>
+        <li>Topic 6</li>
+        <li>Topic 7</li>
+        <li>Topic 8</li>
+        <li>Topic 9</li>
+      </ul>
+    </section>
+
+    <script>
+      let currentUrl = window.location.href;
+      document.querySelectorAll("nav ul li a").forEach((p) => {
+        if (currentUrl.indexOf(p.getAttribute("href")) !== -1) {
+          p.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
